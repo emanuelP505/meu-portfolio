@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emanuel Gonçalves — Fullstack & IA Engineer | Luanda</title>
+<meta name="description" content="Fullstack Developer em Luanda. Transformo processos manuais em sistemas inteligentes com Node.js, PostgreSQL e IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav class="nav">
+ <div class="nav-logo">
+<div class="lang-switch" id="langSwitch">
+  <div class="lang-indicator"></div>
+  <button data-lang="pt" class="active" onclick="setLang('pt')">PT</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+ </div>
+  <div class="nav-status"><span class="dot"></span><span data-i18n="nav_status">Disponível para novos projetos</span></div>
+</nav>
+
+<section class="hero">
+ <h1>
+  <span class="line"><span data-i18n="hero_1">EMANUEL</span></span>
+  <span class="line"><span data-i18n="hero_2">GONÇALVES</span><span class="cursor">_</span></span>
+</h1>
+  <div class="hero-right">
+       <strong data-i18n="hero_sub">Fullstack Developer building AI-powered products.</strong> 
+    <p class="hero-tag" data-i18n="hero_tag">Converto problemas e ideias abstratas em soluções escaláveis através do código</p>
+    <div class="cta-row">
+      <a href="#projetos" class="btn btn-primary" data-i18n="btn_projects">Ver projetos →</a>
+      <a href="https://wa.me/244922579570" target="_blank" class="btn btn-ghost" id="whatsapp"><span data-i18n="btn_wa">Falar no WhatsApp</span> <i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+</section>
+
+<main class="main" id="projetos">
+  <div class="card reveal">
+    <div class="card-header"><div class="dots"><i style="background:var(--red)"></i><i style="background:var(--yellow)"></i><i style="background:var(--green)"></i></div><span data-i18n="projects_exe">Projetos.exe</span></div>
+    <div class="card-body">
+      <div class="case">
+        <div class="case-top"><h4 data-i18n="p1_title">Agente de IA de atendimento virtual</h4><span class="badge online">● online</span></div>
+        <p data-i18n="p1_desc">Bot que lê documentos oficiais sobre as políticas da empresa, responde dúvidas técnicas e reduz 70% do tempo de primeira resposta. Avaliado com 200 perguntas armadilha.</p>
+        <div class="stack"><span>Python</span><span>LangChain</span><span>RAG</span><span>GPT-4o</span></div>
+        <div class="actions"><a href="#" class="btn btn-primary" style="opacity:0.5;pointer-events:none" data-i18n="soon">Em breve</a><a href="https://github.com/emanuelP505" target="_blank" class="btn btn-ghost">GitHub</a></div>
+      </div>
+      <div class="case">
+        <div class="case-top"><h4 data-i18n="p2_title">Plataforma de gestão escolar</h4><span class="badge online">● online</span></div>
+        <p data-i18n="p2_desc">Sistema para automatizar relatórios, avisos e boletins. Gestão administrativa e pedagógica completa para escolas de Luanda.</p>
+        <div class="stack"><span>NodeJS</span><span>PostgreSQL</span><span>Vercel</span></div>
+        <div class="actions"><a class="btn btn-primary" style="opacity:0.5;pointer-events:none" data-i18n="soon">Em breve</a></div>
+      </div>
+      <div class="case">
+        <div class="case-top"><h4 data-i18n="p3_title">Sistema de Alocação de Estágios - IPCM</h4><span class="badge dev" data-i18n="in_dev">● em dev</span></div>
+        <p data-i18n="p3_desc">Plataforma para gestão de perfis, inscrições e alocação automática de estágios. Matching inteligente entre finalistas e empresas. Reduz 80% do trabalho manual.</p>
+        <div class="stack"><span>PostgreSQL</span><span>Node.js</span><span>Vercel</span><span>JWT</span></div>
+        <div class="actions"><a class="btn btn-primary" style="opacity:0.5;pointer-events:none" data-i18n="soon">Em breve</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="side-stack">
+    <div class="card mini reveal">
+  <h3 data-i18n="hard">Hard Skills</h3>
+  <div class="skill-row"><span>Python / LangChain / RAG</span><span>Intermediário</span></div>
+  <div class="skill-row"><span>Node.js / APIs REST</span><span>Intermediário</span></div>
+  <div class="skill-row"><span>PostgreSQL / pgvector</span><span>Intermediário</span></div>
+  <div class="skill-row"><span>Next.js / Vercel</span><span>Intermediário</span></div>
+  <div class="skill-row"><span>Vanilla JS / CSS</span><span data-i18n="advanced">Avançado</span></div>
+    </div>
+    <div class="card mini reveal">
+<h3 data-i18n="soft">Soft Skills</h3>
+<div class="skill-row"><span data-i18n="soft1">Entrega sem desculpa</span></div>
+<div class="skill-row"><span data-i18n="soft2">Comunicação direta</span></div>
+<div class="skill-row"><span data-i18n="soft3">Aprende rápido e documenta</span></div>
+    </div>
+    <div class="contact-box reveal">
+      <h3 data-i18n="cta_title">Quer organizar teus dados?</h3>
+      <p data-i18n="cta_text">Se tua empresa tem dado espalhado no WhatsApp e Excel, eu organizo e coloco IA em cima. 1 call, 0 buzzword.</p>
+      <a href="mailto:emanuelgoncalves380@gmail.com" class="btn">emanuelgoncalves380@gmail.com</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Emanuel G. Gonçalves</span>
+  <span><a href="https://github.com/emanuelP505" target="_blank">GitHub</a> · <a href="https://linkedin.com/in/emanuel-gonçalves" target="_blank">LinkedIn</a> · Luanda / Remoto</span>
+</footer>
+
+<script>
+const translations = {
+  pt: {
+    nav_status: "Disponível para novos projetos", hero_1: "EMANUEL", hero_2: "GONÇALVES",
+    hero_sub: "Fullstack Developer building AI-powered products.",
+    hero_tag: "Converto problemas e ideias abstratas em soluções escaláveis através do código",
+    btn_projects: "Ver projetos →", btn_wa: "Falar no WhatsApp", projects_exe: "Projetos.exe",
+    p1_title: "Agente de IA de atendimento virtual", p1_desc: "Bot que lê documentos oficiais sobre as políticas da empresa, responde dúvidas técnicas e reduz 70% do tempo de primeira resposta. Avaliado com 200 perguntas armadilha.",
+    p2_title: "Plataforma de gestão escolar", p2_desc: "Sistema para automatizar relatórios, avisos e boletins. Gestão administrativa e pedagógica completa para escolas de Luanda.",
+    p3_title: "Sistema de Alocação de Estágios - IPCM", p3_desc: "Plataforma para gestão de perfis, inscrições e alocação automática de estágios. Matching inteligente entre finalistas e empresas. Reduz 80% do trabalho manual.",
+    soon: "Em breve", in_dev: "● em dev",
+    hard: "Hard Skills", advanced: "Avançado", soft: "Soft Skills", soft1: "Entrega sem desculpa", soft2: "Comunicação direta", soft3: "Aprende rápido e documenta",
+    cta_title: "Quer organizar teus dados?", cta_text: "Se tua empresa tem dado espalhado no WhatsApp e Excel, eu organizo e coloco IA em cima. 1 call, 0 buzzword."
+  },
+  en: {
+    nav_status: "Available for new projects", hero_1: "EMANUEL", hero_2: "GONÇALVES",
+    hero_sub: "Fullstack Developer building AI-powered products.",
+    hero_tag: "I turn abstract problems and ideas into scalable solutions through code",
+    btn_projects: "View projects →", btn_wa: "Chat on WhatsApp", projects_exe: "Projects.exe",
+    p1_title: "AI Support Agent", p1_desc: "Bot that reads official company policy docs, answers technical questions and cuts first-response time by 70%. Evaluated with 200 adversarial questions.",
+    p2_title: "School Management Platform", p2_desc: "System to automate reports, notices and grade sheets. Complete admin and pedagogical management for schools in Luanda.",
+    p3_title: "Internship Allocation System - IPCM", p3_desc: "Platform for profile management, applications and automatic internship allocation. Smart matching between graduates and companies. Cuts 80% of manual work.",
+    soon: "Coming soon", in_dev: "● in dev",
+    hard: "Hard Skills", advanced: "Advanced", soft: "Soft Skills", soft1: "No-excuses delivery", soft2: "Direct communication", soft3: "Fast learner, documents everything",
+    cta_title: "Need to organize your data?", cta_text: "If your company has data scattered across WhatsApp and Excel, I organize it and put AI on top. 1 call, 0 buzzword."
+  }
+};
+
+function setLang(lang){
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang;
+
+  const switchEl = document.getElementById('langSwitch');
+  if(switchEl){
+    switchEl.classList.toggle('en', lang === 'en');
+    switchEl.classList.toggle('pt', lang === 'pt');
+  }
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if(translations[lang] && translations[lang][key]){
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('.lang-switch button').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+}
+
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in') })
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+setLang(localStorage.getItem('lang') || 'pt');
+
+function criarTokenSimples() {
+  return Math.random().toString(36).substring(2) + Date.now().toString(36);
+}
+</script>
+</body>
+</html>
