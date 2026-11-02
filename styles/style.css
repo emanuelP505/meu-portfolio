@@ -30,6 +30,15 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-display);over
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
 
 /* HERO */
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,10,11,.15),
+      rgba(10,10,11,.35)
+    ),
+    url("hero-bg.png") center / cover no-repeat;
+}
 .hero{min-height:100vh;display:grid;grid-template-columns:1.15fr 0.85fr;align-items:end;padding:120px 32px 48px;gap:32px}
 .hero h1{font-size:clamp(48px, 9vw, 120px);line-height:0.85;letter-spacing:-0.05em;font-weight:800;text-transform:uppercase}
 .hero h1 .line{display:block;overflow:hidden}
